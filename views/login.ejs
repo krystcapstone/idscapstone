@@ -1,0 +1,60 @@
+<html>
+<head>
+
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- <script>
+		
+		function check(){
+			var ans = window.confirm("Continue?");
+			var valid = 0;
+			
+			if(ans == true){
+				if(document.getElementById("username").value == "admin" && document.getElementById("password").value == "admin")
+					valid = 1; 
+				if(document.getElementById("username").value == "kryst" && document.getElementById("password").value == "Tsyrk:08")
+					valid = 1; 
+				if(document.getElementById("username").value == "julius" && document.getElementById("password").value == "LiusJu12345")
+					valid = 1; 
+				if(document.getElementById("username").value == "john" && document.getElementById("password").value == "Snow;15")
+					valid = 1; 
+				if(document.getElementById("username").value == "Dom" && document.getElementById("password").value == "family")
+					valid = 1;  
+				if(valid == 1)
+					return true;
+			}
+			else if(ans == false || valid == 0);
+				return false;
+			
+		}
+		
+		</script> -->
+<body>
+	<section>
+		<div class="box">
+			<h1>Webapp Name</h1>
+			</div>
+		<div class="content">
+			<form action="/login" method="post">
+				<h1>Welcome Back!</h1>
+				<div class="inputtxt">
+					USER ID </br>
+					<input type="text" id="username" name="username" placeholder="Enter User ID" value=""/>
+					PASSWORD </br>
+					<input type="password" id="password" name="password" placeholder="Enter Password" value=""/>
+
+				</div>
+				
+				<div class="loginbtn"><center>
+					<input type="submit" value="Login" class="login">
+				</center>
+					
+				</div>
+				
+			</form>
+		</div>
+
+	</section>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Change Password</title>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel ="stylesheet" href="style.css"/>
+
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <script src="charts.js"></script>
+    <body>
+        <div class="sidebar">
+            <div class="idsname">
+                <h1><span>IDS Dashboard</span> </h1>
+            </div>
+            <div class="sidebar_menu">
+                <a href="home"><span class="las la-home"></span>
+                <h3>Overview</h3></a>
+                <a href="camera"><span class="las la-camera"></span>
+                <h3>Camera</h3></a>
+                <a href="clips"><span class="las la-chart-pie"></span>
+                <h3>Clips</h3></a>
+                <a href="snaps"><span class="las la-camera"></span>
+                <h3>Snapshots</h3></a>
+                <a href="reports"><span class="las la-flag"></span>
+                <h3>Reports</h3></a>
+                <a href="logs"><span class="las la-list"></span>
+                <h3>Logs</h3></a>
+            <h2><%=users[0].role%></h2>
+                <a href="viewprofile" class="active"><span class="las la-user"></span>
+                <h3>View Profile</h3></a>
+            <% if (users[0].role == "Administrator") { %>
+                <a href="manageusers"><span class="las la-users"></span>
+                <h3>Manage Users</h3></a>
+                <a href="managecameras"><span class="las la-camera"></span>
+                <h3>Manage Cameras</h3></a>
+                <a href="audittrail"><span class="las la-tasks"></span>
+                <h3>Audit Trail</h3></a>
+            <% } %>
+
+            
+                <a href="logout"><span class="las la-sign-out-alt"></span>
+                <h3>Logout</h3></a>
+                     
+        </div>
+    </div>
+    <div class="main_content">
+        <header>
+            <div class="search_wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here"/>
+            </div>
+            <div class="user_wrapper">
+                <h4><%=users[0].username%></span></h4><span><%=users[0].position%></span>
+            </div>
+        </header>
+        <main>
+          <div class="viewboxcont">
+            <div class="viewbox">
+              <h2>Change Password</h2>
+              <hr class="title">
+              <div class="muser">
+                <table>
+                    <form action='/editprofile' method="post">
+                    <tr><td>USERNAME: </td><td><span><%= users[0].username%></span></td></tr>
+                    <tr><td>NAME: </td><td><span><%= users[0].name%></span></td></tr>
+                    <tr><td>POSITION: </td><td><span><%= users[0].position%></span></td></tr>
+                    <tr><td>ROLE:</td><td><span><%= users[0].role%></span></td></tr>
+                    
+                </table>
+            </div>
+                <div class="muserbuttons">
+                   <input type="submit" class ="purplebutton" formaction="/editprofile" method ="post" value="Edit Profile">
+                   <input type="submit" class ="purplebutton" formaction="/changepass" method ="post" value="Change Password">
+                    
+                   
+                    
+                </div>
+            </form>
+              
+          </div>
+            </div>
+        </main>
+
+       
+    
+    </div>
+    </body>
+</html>

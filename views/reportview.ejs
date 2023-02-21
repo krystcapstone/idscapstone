@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Reports</title>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel ="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="idsname">
+                <h1><span>IDS Dashboard</span> </h1>
+            </div>
+            <div class="sidebar_menu">
+                <a href="home" ><span class="las la-home"></span>
+                    <h3>Overview</h3></a>
+                    <a href="camera"><span class="las la-camera"></span>
+                    <h3>Camera</h3></a>
+                    <a href="clips"><span class="las la-chart-pie"></span>
+                    <h3>Clips</h3></a>
+                    <a href="snaps"><span class="las la-camera"></span>
+                    <h3>Snapshots</h3></a>
+                    <a href="reports" class="active"><span class="las la-flag"></span>
+                    <h3>Reports</h3></a>
+                    <a href="logs"><span class="las la-list"></span>
+                    <h3>Logs</h3></a>
+                    <a href="logout"><span class="las la-sign-out-alt"></span>
+                    <h3>Logout</h3></a>
+                     
+                 
+
+        </div>
+    </div>
+    <div class="main_content">
+        <header>
+            <div class="search_wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here"/>
+            </div>
+            <div class="user_wrapper">
+                 <h4>Admin</h4><span>Administrator</span>
+            </div>
+        </header>
+        <main>
+            <div class="viewboxcont">
+                <div class="viewbox">
+                    <h2><%= data[0].datetime.getFullYear() %>-<%= data[0].datetime.getMonth()+1 %>-<%= data[0].datetime.getDate()%></h2>
+                    <hr name ="title">
+                <div class="cliptable">    
+                <table>
+                  <tbody>
+                    <% for(var i=0; i < data.length; i++) { %>
+                      <tr>  
+                          <td><%= data[i].time %></td>
+                          <td><%= data[i].report %></td>
+                          <!-- Picture -->
+                          <td><%= data[i].snap %></td> 
+                          <td><%= data[i].name %></td>
+                          <td><input type="button" value=">"/></td>
+                      </tr>
+                      <% } %>
+                  </tbody>
+                    
+                </table>
+                    
+                </div>
+            </div>
+            
+        </main>
+    </div>
+   
+    
+
+
+
+
+    </body>
+</html>

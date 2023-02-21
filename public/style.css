@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,600;1,300&family=Mulish:wght@300;400;800&family=Roboto:wght@300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.box{
+  position:relative;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+  padding: 3%;
+  Background: #3E2C41;
+  color: #DDE2FF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+.content{
+  display: flex;
+  width: 60%;
+  height: 100%;
+  padding-top: 8%;
+  padding-left: 5%;
+  color: #261C2C;
+}
+.content h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+.content .inputtxt{
+  padding-top: 20%;
+  font-size: 25px;
+  font-weight: 800;
+}
+.content .inputtxt input{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-weight:400;
+  font-size: 16px;
+  border: 1px solid #F0F1F7;
+  border-radius: 10px;
+  background: #FCFDFE;
+}
+.content .loginbtn input{
+  background: #3E2C41;
+  font-size: 20px;
+  color: #DDE2FF;
+  border: 3px solid #F0F1F7;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.content .loginbtn input:hover{
+  background: #76567c;
+  transition: .5s;
+}
+
+
+.sidebar{
+  width: 280px;
+  position:fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #3E2C41;
+  color: #FFFFFF;
+  transition: width 200ms;
+  padding-top: 20px;
+}
+.sidebar h1{
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.sidebar h2:first-letter {text-transform: uppercase}
+.sidebar_menu a{
+  display: flex;
+  color: #A4A6B3;
+  align-items: center;
+  padding: 15px;
+}
+.sidebar_menu span{
+  font-size: 35px;
+}
+.sidebar_menu h2{
+  padding: 15px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.sidebar_menu h3{
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 22px;
+}
+.sidebar_menu a.active{
+  background: rgba(253, 255, 253, 0.1); 
+  color: #DDE2FF;
+  opacity: 0.9;
+}
+.sidebar_menu a:hover{
+  background: rgba(253, 255, 253, 0.1); 
+  color: #DDE2FF;
+  opacity: 0.9;
+  transition: .5s;
+}
+
+
+
+header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(161, 160, 160, 0.76);
+  width: 100%;
+  background: white;
+}
+header h1{
+  padding-left: 5px;
+}
+.search_wrapper{
+  margin-left: 5rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  height: 50px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.search_wrapper span{
+  display: inline_block;
+  padding: 0px 15px;
+}
+.search_wrapper input{
+  height: 100%;
+  width: 100%;
+  padding: .5rem;
+  border: none;
+  outline: none;
+}
+
+.user_wrapper{
+  padding-right: 10px;
+}
+.user_wrapper h4{
+  font-size: 30px;
+  text-align: right;
+}
+.main_content{
+  margin-left: 280px;
+  height: auto;
+  background: #DDE2FF;
+}
+.main_content h1{
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* overview tables */
+.card_first{
+  width: 100%;
+  padding: 35px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  
+}
+
+.card_single{
+  padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card_single span{
+  display: block;
+}
+.card_graph{
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.line_card{
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+.pie_card{
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.preview_card{
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.clip_card{
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.viewboxcont{
+  padding-bottom: 70px;
+}
+.viewboxheader{
+  vertical-align:middle;
+  position:static;
+}
+.viewbox{
+  vertical-align:middle;
+  padding: 10px;
+  width: 90%;
+  height: 81.5%;
+  margin:0 auto;
+  margin-top:30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); 
+}
+.viewbox h2{
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 28pt;
+  padding: 10px;
+}
+
+.viewbox h6{
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 16pt;
+  padding: 10px;
+  color: #9FA2B4;
+}
+
+
+hr.title{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.line{
+height:2px;
+border-width:0;
+color:gray;
+background-color:gray"
+}
+.date_search{
+position: absolute;
+padding-top: 35px;
+left: 44%;
+}
+.log_dates{
+padding-top: 100px;
+width: 100%;
+padding-right: 10px;
+}
+.report{
+font-size: 35px;
+text-align: center;
+width: 100%;
+padding: 20px;
+padding-top: 25px;
+}
+.column {
+float: left;
+width: 50%;
+padding-top: 25px;
+font-size: 30px;
+padding-left: 20px;
+}
+.row:after {
+display: table;
+clear: both;
+}
+
+
+/* Camera*/
+.cameragrid{
+  display: grid;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+.cameracard{
+  padding: 20px;
+}
+.cameracard img{
+  width: 400px;
+  height: 250px;
+}
+.cameracard .text{
+  font-size: 25px;
+}
+.cameracard .text span{
+  font-size: 25px;
+  display: block;
+}
+
+  
+/* Clips */
+.cliptable {
+  table-layout: fixed;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  border-collapse: collapse;
+}
+.cliptable th{
+  position: sticky;
+  background-color: white;
+  margin-bottom: 20px;
+  top: 0;
+  border-bottom: 2px solid #9FA2B4;
+}
+.cliptable th,
+.cliptable td{
+  padding: 25px;
+  text-align: center;
+  font-size: 20px;
+} 
+.cliptable th:nth-child(1),
+.cliptable td:nth-child(1){
+  width: 30%;
+  text-align: left;
+  margin-left: 20px;
+} 
+.cliptable th:nth-child(2),
+.cliptable td:nth-child(2){
+  width: 20%;
+} 
+.cliptable th:nth-child(3),
+.cliptable td:nth-child(3){
+  width: 20%;
+} 
+
+.cliptable td .rectangle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.cliptable td.N .rectangle{
+  background-color: #F12B2C;
+}
+
+.cliptable td.R .rectangle{
+  background-color: #29CC97;
+}
+
+.cliptable input[type=submit], .log_dates input[type=submit] {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 10px;
+}
+
+.cliptable input[type=text]{
+  font-family: 'Mulish', sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+/* Snaps */
+.snapgrid{
+  display: grid;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+}
+.snapcard{
+  padding: 20px;
+}
+.snapcard img{
+  width: 250px;
+  height: 188px;
+}
+.snapcard span{
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+
+  
+
+
+
+table{
+  width: 100%;
+}
+
+.logshow{
+  padding-left: 10px;
+  font-size: 25pt;
+  text-align: center;
+}
+.reportshow{
+  text-align: center;
+  font-size: 20px;
+  
+}
+.report hr{
+  width:100%;
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray
+}
+.reportpic{
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+ 
+}
+.reportpic img{
+  width: 250px;
+  height: 175px;
+ 
+}
+
+/* View Profile / Manage User */
+
+.muser{
+  width:40%;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.muser tr{
+  color:#261C2C;
+  padding: 40px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+}
+.muser td{
+  padding:30px;
+}
+
+.muser span{
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.muser select{
+  background-color:  #FCFDFE;
+  font-size: 27px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c2c3c7;
+}
+.muser input[type=text]{
+  font-size: 27px;
+  background: #FCFDFE;
+  border: 1px solid #F0F1F7;
+  width: 237px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.muserbuttons{
+  width: 100%;
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addbtn {
+  display: flex;
+  justify-content: center;
+}
+.addbtn input[type=submit]{
+  display: flex;
+  justify-content: center;
+  background: #3E2C41;
+  font-size: 20px;
+  color: #ffffff;
+  border: 3px solid #F0F1F7;
+  width: 237px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.muserbuttons input[type=submit]{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 10px;
+  padding:30px;
+  margin: 20px;
+  width: 237px;
+  transition: background-color 1s;
+}
+.muserbuttons .purplebutton{
+  background: #3E2C41;
+  color: #ffffff;
+  border: 3px solid #F0F1F7;
+}
+.muserbuttons .purplebutton:hover{
+  background: #875c8f;
+}
+
+.muserbuttons .redbutton{
+  background: #F0F1F7;
+  color: #F12B2C;
+  border: 3px solid #F0F1F7;
+}
+
+/* Add User/Camera */
+
+.adduser{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adduser table, input[type=text], input[type=password]{
+  padding:20px;
+  font-size: 27px;
+  width: 300px;  
+}
+.adduser table tr td{
+  padding: 8px;
+}
+
+.adduser input[type=text], input[type=password]{
+  background: #FCFDFE;
+  border: 1px solid #F0F1F7;
+  width: 237px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.adduser tr.lower  input[type=text], input[type=password]{
+  width: 500px;
+}
+
