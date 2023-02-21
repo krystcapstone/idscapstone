@@ -49,7 +49,7 @@ var con = mysql.createConnection({
   host: hostname,
   user: "root",
   password: "",
-  port: port,
+  port: '3306',
   database: "capitdb",
   multipleStatements:true
 });
