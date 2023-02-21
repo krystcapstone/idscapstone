@@ -46,7 +46,7 @@ app.listen(port, hostname, function() {
 
 /* DATABASE SETUP */
 var con = mysql.createConnection({
-  host: hostname,
+  host: '192.168.254.125',
   user: "root",
   password: "",
   port: 3306,
